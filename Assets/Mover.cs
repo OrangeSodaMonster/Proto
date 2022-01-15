@@ -48,7 +48,11 @@ public class Mover : MonoBehaviour
             JumpingAnimation();
             Drift();
             DriftAnimatiom();
-            DefaultAnimation();            
+            DefaultAnimation();          
+            
+            Vector3 lovalVelocity = transform.InverseTransformDirection (rb.velocity);
+            lovalVelocity.x = 0;
+            rb.velocity = transform.TransformDirection(lovalVelocity);
         }
     }
     private void DefaultAnimation()
@@ -129,6 +133,8 @@ public class Mover : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (!(collision.gameObject.tag == "Ground")) return;
+
         isInGround = true;
         isJumping = false;
 
@@ -138,6 +144,8 @@ public class Mover : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
+        if (!(collision.gameObject.tag == "Ground")) return;
+
         isInGround=false;
     }
 
