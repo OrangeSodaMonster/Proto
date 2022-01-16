@@ -38,10 +38,15 @@ Material:
         m_Texture: {fileID: 2800000, guid: 6f4894fabe755ba48960310e63487c00, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: 6f4894fabe755ba48960310e63487c00, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     m_Colors:
     - Color_7176C1E5: {r: 18.162949, g: 18.162949, b: 18.162949, a: 1}
+    - _Color: {r: 32, g: 32, b: 32, a: 1}
   m_BuildTextureStacks: []

@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Circle01_Add
-  m_Shader: {fileID: -6465566751694194690, guid: a1e6d001418052742bec8556f06b7b58,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 72a600b4ef0e5e44690a057468c7fc34, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -26,6 +25,28 @@ Material:
         m_Texture: {fileID: 2800000, guid: 7a0cb97445f894845b38e471343cd74c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: 7a0cb97445f894845b38e471343cd74c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
     m_Colors:
     - Color_7176C1E5: {r: 24.094116, g: 24.094116, b: 24.094116, a: 1}
+    - _Color: {r: 23.968628, g: 23.968628, b: 23.968628, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &6487098004772194190
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0

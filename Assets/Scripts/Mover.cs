@@ -44,15 +44,13 @@ public class Mover : MonoBehaviour
             Turn();
             Fall();
             Jump();
-            PreventZRot();
+            PreventZRotXVel();
             JumpingAnimation();
             Drift();
             DriftAnimatiom();
             DefaultAnimation();          
             
-            Vector3 lovalVelocity = transform.InverseTransformDirection (rb.velocity);
-            lovalVelocity.x = 0;
-            rb.velocity = transform.TransformDirection(lovalVelocity);
+            
         }
     }
     private void DefaultAnimation()
@@ -108,9 +106,13 @@ public class Mover : MonoBehaviour
         }
     }
 
-    private void PreventZRot()
+    private void PreventZRotXVel()
     {
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0);
+
+        Vector3 lovalVelocity = transform.InverseTransformDirection(rb.velocity);
+        lovalVelocity.x = 0;
+        rb.velocity = transform.TransformDirection(lovalVelocity);
     }
 
     private void Fall()
@@ -138,7 +140,7 @@ public class Mover : MonoBehaviour
         isInGround = true;
         isJumping = false;
 
-        if (jump1Pressed || jump2Pressed)
+        if ((jump1Pressed || jump2Pressed) && Mathf.Abs(moveInput.x) > 0.5f)
             isDrifting = true;
     }
 
@@ -157,14 +159,14 @@ public class Mover : MonoBehaviour
     void OnJump(InputValue value)
     {
         jump1Pressed = value.isPressed;
-        isJumping = value.isPressed;
+        if (isInGround) isJumping = value.isPressed;
         jumpForceApplied = false;
     }
 
     void OnJump2(InputValue value)
     {
         jump2Pressed = value.isPressed;
-        isJumping = value.isPressed;
+        if (isInGround) isJumping = value.isPressed;
         jumpForceApplied = false;
     }
 

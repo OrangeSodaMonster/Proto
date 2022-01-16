@@ -176,7 +176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: decc2db7237807a48bd3d739b5102219, type: 2}
+  - {fileID: 2100000, guid: 147d670a6edec7d4db91d954be199cd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.4023256, y: 1}
+    m_SensorSize: {x: 1.5138037, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -719,6 +719,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 987335b37e931114ab736874560e21ee, type: 2}
+    - target: {fileID: 8628833599739177519, guid: be1d1bda189958d4688d188effb01752, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8628833599739177519, guid: be1d1bda189958d4688d188effb01752, type: 3}
       propertyPath: m_Name
       value: Vassoura (2)
@@ -856,6 +860,67 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!1001 &1210359324120844246
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3557541353002583143, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_Name
+      value: vfx_bubbles_loop
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.4781
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6040201
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -36.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353002583192, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557541353199278322, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11354cb6efea6004cbf45a9a74a433e9, type: 3}
 --- !u!1001 &8958786938432458434
 PrefabInstance:
   m_ObjectHideFlags: 0
